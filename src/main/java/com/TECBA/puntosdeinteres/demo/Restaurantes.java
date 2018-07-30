@@ -1,68 +1,55 @@
 package com.TECBA.puntosdeinteres.demo;
-import java.util.ArrayList;
-class Restaurantes
+public class Restaurantes
 {
     public String dirrecion;
     public String nombre;
-    public String lugar;
-    public int precio;
+    public String ubicacion;
+    public String fundacion;
     public boolean reserva;
-    public ArrayList<Menu> menus;
-    public Restaurantes(String dirrecion, String nombre, String lugar, int precio, boolean reserva,)
-    {
+    public int telefono;
+    public String email;
+    public String facebook;
+    public int whatsApp;
+    public String twitter;
+    public Restaurantes(String dirrecion, String nombre, String ubicacion, String fundacion, boolean reserva, int telefono, String email, String facebook, int whatsApp, String twitter) {
         this.dirrecion = dirrecion;
         this.nombre = nombre;
-        this.lugar = lugar;
-        this.precio = precio;
+        this.ubicacion = ubicacion;
+        this.fundacion = fundacion;
         this.reserva = reserva;
-        menus = new ArrayList<Menu>();
-    }
-    public void mostrarInformacion()
-    {
-        System.out.println("Informacion de "+nombre);
-        System.out.println("Direccion: "+dirrecion);
-        System.out.println("Lugar: "+lugar);
-        System.out.println("Precio "+precio);
-        System.out.println("Existe Reserva");
-    }
-    public void addMenu(Menu m)
-    {
-        menus.add(m);
-    }
-    public void mostrarMenu()
-    {
-
+        this.telefono = telefono;
+        this.email = email;
+        this.facebook = facebook;
+        this.whatsApp = whatsApp;
+        this.twitter = twitter;
     }
     public String getDirrecion() {
         return dirrecion;
     }
-
     public void setDirrecion(String dirrecion) {
         this.dirrecion = dirrecion;
     }
-
     public String getNombre() {
         return nombre;
     }
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public String getLugar() {
-        return lugar;
+    public String getUbicacion() {
+        return ubicacion;
     }
 
-    public void setLugar(String lugar) {
-        this.lugar = lugar;
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
     }
 
-    public int getPrecio() {
-        return precio;
+    public String getFundacion() {
+        return fundacion;
     }
 
-    public void setPrecio(int precio) {
-        this.precio = precio;
+    public void setFundacion(String fundacion) {
+        this.fundacion = fundacion;
     }
 
     public boolean isReserva() {
@@ -71,5 +58,45 @@ class Restaurantes
 
     public void setReserva(boolean reserva) {
         this.reserva = reserva;
+    }
+
+    public int getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getFacebook() {
+        return facebook;
+    }
+
+    public void setFacebook(String facebook) {
+        this.facebook = facebook;
+    }
+
+    public int getWhatsApp() {
+        return whatsApp;
+    }
+
+    public void setWhatsApp(int whatsApp) {
+        this.whatsApp = whatsApp;
+    }
+
+    public String getTwitter() {
+        return twitter;
+    }
+
+    public void setTwitter(String twitter) {
+        this.twitter = twitter;
     }
 }
