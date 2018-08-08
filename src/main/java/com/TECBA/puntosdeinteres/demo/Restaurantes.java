@@ -1,6 +1,5 @@
 package com.TECBA.puntosdeinteres.demo;
-public class Restaurantes
-{
+public class Restaurantes {
     public String dirrecion;
     public String nombre;
     public String ubicacion;
@@ -11,6 +10,7 @@ public class Restaurantes
     public String facebook;
     public int whatsApp;
     public String twitter;
+
     public Restaurantes(String dirrecion, String nombre, String ubicacion, String fundacion, boolean reserva, int telefono, String email, String facebook, int whatsApp, String twitter) {
         this.dirrecion = dirrecion;
         this.nombre = nombre;
@@ -23,7 +23,25 @@ public class Restaurantes
         this.whatsApp = whatsApp;
         this.twitter = twitter;
     }
-    public String getDirrecion() {
+
+    public void mostrarInformcion() {
+
+        System.out.println("--- Informacion de Restaurante");
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Dirreccion: " + dirrecion);
+        System.out.println("Ubicacion: " + ubicacion);
+        System.out.println("Fundacion: " + fundacion);
+        System.out.println("Reserva: " + reserva);
+        System.out.println("Correo Electronico: " + email);
+        System.out.println("Facebook: " + facebook);
+        System.out.println("WhatsApp: " + whatsApp);
+        System.out.println("Twitter: " + twitter);
+    }
+
+    public void PedirInformacion() {
+        System.out.println(mostrarInformcion());
+        }
+        public String getDirrecion() {
         return dirrecion;
     }
     public void setDirrecion(String dirrecion) {
